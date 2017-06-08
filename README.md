@@ -1,4 +1,4 @@
-#斯坦福计算机系本科生人工智能方向课程资源"
+# 斯坦福计算机系本科生人工智能方向课程资源
 
 Version 1.2 By [Liu Xiaozhen](http://tech.liuxiaozhen.com) Updated on 2017/2/24
 
