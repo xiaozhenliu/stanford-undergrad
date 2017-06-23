@@ -1,0 +1,68 @@
+CS 106B Hospital Patient Check-in System
+========================================
+
+Current patient queue:
+{} (empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? jim
+Priority? 5
+
+Current patient queue:
+{5:jim} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? JIM
+Priority? 3
+
+Current patient queue:
+{5:jim, 3:JIM} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? u
+Name? jim
+New priority? 2
+
+Current patient queue:
+{2:jim, 3:JIM} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? P
+Processing patient: "jim"
+
+Current patient queue:
+{3:JIM} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? JIM
+Priority? 10
+
+Current patient queue:
+{3:JIM, 10:JIM} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? F
+Front of line is "JIM" with priority 3
+
+Current patient queue:
+{3:JIM, 10:JIM} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? PaM
+Priority? 3
+
+Current patient queue:
+{3:JIM, 10:JIM, 3:PaM} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? F
+Front of line is "JIM" with priority 3
+
+Current patient queue:
+{3:JIM, 10:JIM, 3:PaM} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? P
+Processing patient: "JIM"
+
+Current patient queue:
+{10:JIM, 3:PaM} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? P
+Processing patient: "PaM"
+
+Current patient queue:
+{10:JIM} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? P
+Processing patient: "JIM"
+
+Current patient queue:
+{} (empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? Q
+
+Exiting.

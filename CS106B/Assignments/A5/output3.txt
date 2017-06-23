@@ -1,0 +1,35 @@
+CS 106B Hospital Patient Check-in System
+========================================
+
+Current patient queue:
+{} (empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? Q
+Priority? 8
+
+Current patient queue:
+{8:Q} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? C
+
+Current patient queue:
+{} (empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? C
+
+Current patient queue:
+{} (empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? C
+
+Current patient queue:
+{} (empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? P
+
+***
+*** STANFORD C++ LIBRARY 
+*** A string exception occurred during program execution: 
+*** There is no top. I must abort. I never learned how to love...
+***
+*** Stack trace (line numbers are approximate):
+*** 0x10fd33cf3     VectorPatientQueue::processPatient()
+*** 0x10fd3053b     test(PatientQueue&)
+*** 0x10fd2fa33     main()
+***

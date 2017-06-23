@@ -1,0 +1,37 @@
+CS 106B Hospital Patient Check-in System
+========================================
+
+Current patient queue:
+{} (empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? Anton
+Priority? 3
+
+Current patient queue:
+{3:Anton} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? Anton
+Priority? 4
+
+Current patient queue:
+{3:Anton, 4:Anton} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? Anton
+Priority? 5
+
+Current patient queue:
+{3:Anton, 4:Anton, 5:Anton} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? F
+Front of line is "Anton" with priority 3
+
+Current patient queue:
+{3:Anton, 4:Anton, 5:Anton} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? U
+Name? Anton
+New priority? 2
+
+Current patient queue:
+{2:Anton, 4:Anton, 5:Anton} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? Q
+
+Exiting.

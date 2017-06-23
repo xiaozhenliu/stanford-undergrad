@@ -1,0 +1,53 @@
+CS 106B Hospital Patient Check-in System
+========================================
+
+Current patient queue:
+{} (empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? A
+Priority? 1
+
+Current patient queue:
+{1:A} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? B
+Priority? 3
+
+Current patient queue:
+{1:A, 3:B} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? C
+Priority? 4
+
+Current patient queue:
+{1:A, 3:B, 4:C} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? B
+Priority? 5
+
+Current patient queue:
+{1:A, 3:B, 4:C, 5:B} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? U
+Name? B
+New priority? 2
+
+Current patient queue:
+{1:A, 2:B, 4:C, 5:B} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? C
+
+Current patient queue:
+{} (empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? N
+Name? A
+Priority? 2
+
+Current patient queue:
+{2:A} (not empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? P
+Processing patient: "A"
+
+Current patient queue:
+{} (empty)
+N)ew, F)ront, U)pgrade, P)rocess, B)ulk, C)lear, Q)uit? Q
+
+Exiting.
