@@ -16,27 +16,37 @@
 #include "strlib.h"
 #include "lifegui.h"
 using namespace std;
+/* Funtion Prototypes*/
+void intro();
+
+Grid<char> mygrid = Grid<char>();
 
 int main() {
     // TODO: Finish the program!
-    // Part 1. The Introduction
-    cout << "Welcome to xiaozhenliu's version of CS106B Spring 2017 Game of Life" << endl;
-    cout << "a simulation of the lifecycle of a bacteria colony." << endl;
-    cout << "Cells (X) live and die by the following rules:" << endl;
-    cout << "- A cell with 1 or fewer neighbors dies" << endl;
-    cout << "- Locations with 2 neighbors remain stable" << endl;
-    cout << "- Locations with 3 neightbors will create life" << endl;
-    cout << "- A cell with 4 or more neighbors dies." << endl;
+
+    void intro(); // Part 1. The Introduction
 
     // Input file name:
     string fname;
-    cout << "Gird input file name?" ;
-    cin >> fname;
+    cout << "Gird input file name? " ;
+
+    while (true) {
+        cin >> fname;
+        if (fileExists(fname) == false){
+            cout << "Invalid file name. Please try again."<< endl;
+        }
+        else break;
+    }
+
+    //Read the input file to a grid object
 
     // Options of wrapping or not
     char wrapping;
-    cout << "SHould the simulation wrap around the grid (y/n)? ";
+    cout << "Should the simulation wrap around the grid (y/n)? ";
     cin >> wrapping;
+
+
+
 
     //Placeholder for grid display;
     //TODO: replace this block with a function calls initial grid play
@@ -57,4 +67,15 @@ int main() {
 
     cout << "Have a nice Life!" << endl;
     return 0;
+}
+
+void intro(){
+    cout << "Welcome to xiaozhenliu's version of CS106B Spring 2017 Game of Life" << endl;
+    cout << "a simulation of the lifecycle of a bacteria colony." << endl;
+    cout << "Cells (X) live and die by the following rules:" << endl;
+    cout << "- A cell with 1 or fewer neighbors dies" << endl;
+    cout << "- Locations with 2 neighbors remain stable" << endl;
+    cout << "- Locations with 3 neightbors will create life" << endl;
+    cout << "- A cell with 4 or more neighbors dies." << endl;
+
 }
